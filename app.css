@@ -1,0 +1,353 @@
+
+
+/* Variables */
+
+:root {
+
+	--main-txt-color: #414042;
+	--main-bg-color: #f5f6f7;
+	--accent-txt-color: #a0afba;
+	--accent-bg-color: #ffffff;
+	--gradient: linear-gradient(90deg, rgba(104,203,179,1) 20%, rgba(158,179,90,1) 55%, rgba(221,80,77,1) 95%);
+
+}
+
+
+
+/* Inputting Fonts */
+
+
+@font-face {
+
+	font-family: Proxima Nova SemiBold;
+	src: url("./fonts/proximanova-semibold-webfont.ttf");
+
+}
+
+
+
+
+/* General CSS */
+
+
+body {
+
+	font-family: Proxima Nova SemiBold;
+	background-color: var(--main-bg-color);
+	color: var(--main-txt-color);
+	scroll-behavior: smooth;
+
+}
+
+
+
+a {
+
+	color: var(--accent-txt-color);
+	transition: 0.2s ease-in-out;
+
+}
+
+
+a:hover {
+
+	color: var(--main-txt-color);
+	text-decoration: none;
+
+}
+
+
+img {
+
+	border-radius: 0.4em;
+	transform: translateZ(20px);
+}
+
+
+.text-accent {
+
+	color: var(--accent-txt-color);
+}
+
+.text-gradient {
+
+	background-color: var(--main-txt-color);
+	background: var(--gradient);
+	background-size: cover;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
+.mobile-hidden {
+
+	display: none;
+}
+
+
+.sticky-top {
+
+  top: 2em;
+
+}
+
+
+
+
+/* Header CSS */
+
+
+header .navbar {
+
+	padding-top: 2em;
+}
+
+
+header .navbar .navbar-brand {
+
+	color: var(--main-txt-color);
+	font-size: 1.5rem;
+}
+
+
+
+header .navbar .brand-pill {
+
+	background: var(--gradient);
+	color: white;
+	padding: 0.35em 0.6em;
+	padding-bottom: 0.28em;
+	border-radius: 0.4em;
+	font-size: 0.5em; 
+	position: relative;
+	bottom: 0.32em;
+	left: 0.15em;
+}
+
+
+header .navbar-expand-md .navbar-nav .nav-link {
+
+	padding: 0.7em 1em;
+	padding-bottom: 0.5em;
+
+}
+
+
+header .navbar-nav .nav-primary {
+
+	background-color: var(--accent-bg-color);
+	color: var(--main-txt-color);
+	border-radius: 0.4em;
+
+}
+
+header .navbar-nav .nav-primary:hover {
+
+	background-color: var(--accent-txt-color);
+	color: white;
+
+}
+
+
+
+
+
+/* Footer CSS */
+
+
+footer {
+
+	padding-top: 8em;
+	padding-bottom: 2em;
+}
+
+footer p {
+
+	display: inline-block;
+}
+
+
+footer a svg {
+
+	padding: 0.2em;
+	stroke-width: 2.5;
+	position: relative;
+	right: 0.4em;
+	margin-bottom: 0.15em;
+
+
+}
+
+
+
+
+/* Icon CSS */
+
+
+.gradient-icon {
+
+	background: var(--gradient);
+	padding: 0.3em;
+	padding-bottom: 0.225em;
+	border-radius: 1em;
+	position: relative;
+	bottom: 0.15em;
+	margin-left: 0.1em;
+	margin-right: 0.4em;
+
+}
+
+.outline-icon {
+
+	stroke: white;
+	stroke-width: 3;
+}
+
+
+.solid-icon {
+
+	fill: white;
+	stroke: none;
+}
+
+.leading-icon {
+  
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+  margin-bottom: 0.3em;
+  margin-right: 0.5em;
+  
+}
+
+
+
+/* Section CSS */
+
+
+.intro-section {
+
+	padding-top: 4em;
+	padding-bottom: 3em;
+}
+
+.intro-section h1 {
+
+	letter-spacing: -0.025em;
+}
+
+
+
+
+
+.text-section .subtext {
+
+	padding-top: 0.25em;
+	line-height: 1.2;
+	color: var(--accent-txt-color);
+	font-size: 1.1em;
+}
+
+
+
+
+/* Card CSS */
+
+
+.card-deck .card {
+
+	border-radius: 0.4em;
+	border: none;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	transform-style: preserve-3d;
+
+}
+
+.card-col {
+
+	padding-bottom: 2em;
+}
+
+.card-text {
+
+	color: var(--main-txt-color);
+}
+
+.card-footer {
+
+	background: none;
+	border: none;
+	padding-top: 2em;
+
+}
+
+.card .card-footer .subtext {
+
+	display: inline-block;
+	color: var(--accent-txt-color);
+}
+
+
+
+
+
+
+.card-home {
+
+	padding-bottom: 4em;
+}
+
+
+.card-home .card a {
+
+	color: var(--main-txt-color);
+	float: right;
+
+}
+
+
+
+
+.card-horizontal {
+
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.card-more {
+
+	padding-top: 4em;
+}
+
+.card-more h4 {
+
+	padding-bottom: 1em;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+.mobile-hidden {
+
+	display: inline-block;
+}
+
+.card-home .card-col:nth-child(even) {
+
+	padding-top: 6em;
+	padding-bottom: 2em;
+}
+
+
+	
+}
+
