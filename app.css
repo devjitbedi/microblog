@@ -40,6 +40,13 @@ body {
 }
 
 
+h1 {
+
+	font-size: 2rem;
+	letter-spacing: -0.045em;
+}
+
+
 
 a {
 
@@ -231,11 +238,6 @@ footer a svg {
 	padding-bottom: 3em;
 }
 
-.intro-section h1 {
-
-	letter-spacing: -0.025em;
-}
-
 
 
 
@@ -263,11 +265,6 @@ footer a svg {
 	margin-bottom: 2em;
 	transform-style: preserve-3d;
 
-}
-
-.card-col {
-
-	padding-bottom: 2em;
 }
 
 .card-text {
@@ -334,6 +331,12 @@ footer a svg {
 
 
 @media only screen and (min-width: 768px) {
+
+h1 {
+
+	font-size: 2.5rem;
+	letter-spacing: -0.025em;
+}
 
 
 .mobile-hidden {
