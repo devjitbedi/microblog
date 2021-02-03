@@ -6,7 +6,7 @@
 
 	--main-txt-color: #414042;
 	--main-bg-color: #f5f6f7;
-	--accent-txt-color: #a0afba;
+	--accent-txt-color: #899ca9;
 	--accent-bg-color: #ffffff;
 	--gradient: linear-gradient(90deg, rgba(104,203,179,1) 20%, rgba(158,179,90,1) 55%, rgba(221,80,77,1) 95%);
 
@@ -49,13 +49,13 @@ body {
 
 h1 {
 
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	
 }
 
 h1, h3, h4 {
 
-	letter-spacing: -0.035em;
+	letter-spacing: -0.04em;
 }
 
 
@@ -247,7 +247,7 @@ footer a svg {
 .intro-section {
 
 	padding-top: 4em;
-	padding-bottom: 1em;
+	padding-bottom: 1.2em;
 }
 
 
