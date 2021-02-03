@@ -49,7 +49,7 @@ body {
 
 h1 {
 
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	
 }
 
@@ -247,7 +247,7 @@ footer a svg {
 .intro-section {
 
 	padding-top: 4em;
-	padding-bottom: 3em;
+	padding-bottom: 1em;
 }
 
 
@@ -360,6 +360,11 @@ h3, h4, p, a {
 .mobile-hidden {
 
 	display: inline-block;
+}
+
+.intro-section {
+
+	padding-bottom: 3em;
 }
 
 .card-home .card-col:nth-child(even) {
